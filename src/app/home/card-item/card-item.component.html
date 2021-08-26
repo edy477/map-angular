@@ -1,0 +1,15 @@
+
+<mat-card-content class="Listcontent__left">
+  <mat-card-title>{{name}}</mat-card-title>
+  <ul class="item-custom-list">
+    <li *ngFor="let floor of floorplans" class="list-custom-item">
+
+$ {{floor.price}}
+    </li>
+
+  </ul>
+</mat-card-content>
+
+<mat-card-content class="Listcontent__right">
+  <img class="data-image" mat-card-image style="width: 120px; height: 90px" src="{{imgSrc}}">
+</mat-card-content>

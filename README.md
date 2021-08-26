@@ -1,4 +1,26 @@
 # AngularMapboxAssesment
+ngular-Mapbox-Assignment
+A Demo project for  showcase how  mapbox + maptiler  in combination with angular componentes and ngrx as a store managment can be used for map based applications
+
+
+Char
+- Strict Mode Enabled from the beginning
+- Material UI for UI components
+- Adapted angular components attached to mapbox
+- Folders organized in Core,Shared 
+- SASS  for CSS
+- Ngrx for state management
+- .
+
+
+
+Features Implemented
+- Custom markers
+- Custom controllers
+- user interaction with markers interaction
+- Dynamic sidebar
+- among others
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 

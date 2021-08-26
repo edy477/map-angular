@@ -1,0 +1,33 @@
+.map-box{
+  height: 100%;
+  width: 100%;
+
+}
+
+.map-container{
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.map-container__sidenav{
+
+  width: 450px;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.map-container__mapcontent{
+  width: 100%;
+  height: 100%;
+}
+
+
+.main-map{
+  width: 100%;
+  height: 100%;
+  display: block;
+}

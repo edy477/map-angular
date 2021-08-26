@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-card-title>Custom Controls</mat-card-title>
+
+  <mat-card-content>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header><mat-icon>tune</mat-icon>Edit Markers</mat-expansion-panel-header>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <section class="example-section">
+       <mat-button-toggle><mat-icon (click)="onDelete()">delete</mat-icon></mat-button-toggle>
+        </section>
+        <mat-button-toggle value="italic"><mat-icon>edit</mat-icon></mat-button-toggle>
+
+      </mat-button-toggle-group>
+
+
+
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Add Marker</mat-expansion-panel-header>
+      <div>
+        <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+          <mat-icon (click)="create()">add_circle_outline</mat-icon>
+        </button>
+      </div>
+    </mat-expansion-panel>
+
+
+
+
+
+    <mat-expansion-panel>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Draw</mat-expansion-panel-header>
+      <mat-button-toggle (click)="onDraw()" ></mat-button-toggle>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Clear All</mat-expansion-panel-header>
+      <mat-button-toggle (click)="clearAll()"></mat-button-toggle>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+      Center
+      </mat-expansion-panel-header>
+      <mat-button-toggle><mat-icon (click)="onCenter()">filter_center_focus</mat-icon></mat-button-toggle>
+    </mat-expansion-panel>
+  </mat-card-content>
+
+</mat-card>

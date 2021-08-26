@@ -1,0 +1,31 @@
+
+.item-card{
+  margin-top: 10px;
+  width: 420px;
+  height: 125px;
+  box-sizing: border-box;
+  margin-right: 8px;
+
+
+}
+.main-tab{
+  display: block;
+}
+.Listcontent{
+ // display: flex;
+ // flex-direction: row;
+  width: 420px;
+  height: 125px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+.Sidebar__content{
+  padding: 10px 8px 12px 8px;
+}
+
+
+.item-container{
+  display: flex;
+  flex-direction: row;
+}

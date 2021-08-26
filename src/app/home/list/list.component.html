@@ -1,0 +1,36 @@
+<div >
+
+  <mat-toolbar >
+    <mat-toolbar-row>
+      <h1> Cindy Little | Apartment Agents </h1>
+      <button mat-button (click)="onFavorite()" >Click</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-tab-group animationDuration="0ms" class="main-tab">
+    <mat-tab label="Rent">
+      <div class="slider">
+        <mat-slider min="726"   (change)="updateSetting($event)"  max="1872" step="1" value="1">
+        </mat-slider>
+        <button mat-button (click)="onActive()">DONE</button>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Bedrooms">
+      <section class="example-section" >
+        <h4></h4>
+        <p><mat-checkbox>Studio</mat-checkbox></p>
+        <p><mat-checkbox>1 Bed</mat-checkbox></p>
+        <p><mat-checkbox>2 Bed</mat-checkbox></p>
+        <p><mat-checkbox>3 Bed</mat-checkbox></p>
+      </section>
+    </mat-tab>
+  </mat-tab-group>
+
+
+  <br/>
+  <mat-card class="Listcontent" *ngFor="let record of records$ | async">
+    <app-card-item [name]="record.name" [imgSrc]="record.photo" [listId]="record.propertyID" [floorplans]="record.floorplans" class="item-container"></app-card-item>
+  </mat-card>
+</div>
+
